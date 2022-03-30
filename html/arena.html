@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/map.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/font.css">
+
+  <script src="../script/script.js"></script>
+  <title>Adex Legends</title>
+
+    <!-- Font List  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Fjalla+One&family=Oswald:wght@300&family=Roboto:wght@300&family=Smooch+Sans&display=swap" rel="stylesheet">
+  
+
+    <!-- Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+  <script src="../script/script.js"></script>
+  <script src="../script/corousel.js"></script>
+  <script src="../script/arena-slider.js"></script>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="navbar-bar">
+      <div class="navbar-menu">
+       <div id="home" class="navbar" onclick="home()">
+         <h2>Home</h2>
+       </div>
+       <div id="legend" class="navbar" onclick="legend()">
+         <h2>Legend</h2>
+       </div>
+       <div id="map" class="navbar"  onmouseover="mapNavbar()" onmouseleave="mapCloseNavbar()">
+         <h2>Map</h2>
+        <div id="map-dropdown" class="dropdown-content">
+          <a href="arena.html" class="dropdown">Arena</a> <br>
+          <a href="battleroyale.html" class="dropdown">Battle Royale</a>
+        </div>
+       </div>
+       <div id="aboutus" class="navbar"  onclick="aboutus()">
+         <h2>About</h2>
+       </div>
+      </div>
+      <div id="registration" onclick="registration()">
+        <h2>Registration</h2>
+        </div>
+     </div>
+  </div>
+
+  <div class="content">
+    
+    <div class="map-corousel">
+      <div class="map-background">
+
+        <div class="slide-content" id="slide-1">
+          <div class="black"></div>
+          <div class="caption">Encore</div> 
+        </div>
+        <div class="slide-content" id="slide-2">
+          <div class="black"></div>
+          <div class="caption">Habitat</div>
+        </div>
+        <div class="slide-content" id="slide-3">
+          <div class="black"></div>
+          <div class="caption">Overflow</div>
+        </div>
+        <div class="slide-content" id="slide-4">
+          <div class="black"></div>
+          <div class="caption">Phase Runner</div>
+        </div>
+        <div class="minus" onclick="minus()">&#10094;</div>
+        <div class="plus" onclick="plus()">&#10095;</div>
+      </div>
+    </div>
+<!-- 
+    <div class="discover">
+      <div class="discover-background">
+        <h1 class="center" id="discover-title">DISCOVER THE MAPS OF THE APEX GAMES</h1>
+        <p class="center smooch" id="discover-paragraph">Kings Canyon, World’s Edge, and Olympus. You’ve fought there, you’ve died there, but do you know why they were chosen? Hammond Robotics and the Mercenary Syndicate seem to have a hand in everything that shapes the destiny of the Outlands... Learn more about the maps that host the Apex Games.</p>
+      </div>
+    </div> -->
+    <div class="arena-title">
+      <div class="black-background">
+        <div class="arena-card">
+          <h1 class="arena-header ">ARENAS</h1>
+          <p class=" arena-text smooch">Sharpen your skills where there's nowhere to hide. Unlike the grand scale of the Apex Games, <br>Arenas maps are specially designed for frenetic 3v3 action.</p>
+          <div class="arena-flex smooch">
+            <div class="arena-a" onclick="lingkaranSlide('lingkaran-1')">Encore</div>
+            <div class="arena-a" onclick="lingkaranSlide('lingkaran-2')">Habitat</div>
+            <div class="arena-a" onclick="lingkaranSlide('lingkaran-3')">Overflow</div>
+            <div class="arena-a" onclick="lingkaranSlide('lingkaran-4')">Phase Runner</div>
+          </div>
+            
+          </div>
+      </div>
+    </div>
+    
+    <div class="encore">
+      <div class="encore-background opacity">
+      </div>
+      <div class="space-evenly flex">
+          <div class="map" id="encore-map">
+            <img src="../asset/map/arena-map/encore.png" alt="" id="map-image">
+          </div>
+          <div class="encore-map-text">
+            <h2 class="encore-title" id="arena-title">Encore</h2>
+            <p class="encore-paragraph" id="arena-paragraph">Found on the planet Boreas, Encore is the Arena where Seer made his name. Treated as a cursed outcast after being blamed for his planet’s moon being struck by a meteor, he slowly gathered a following of outsiders who would come to watch him compete. Over time, the Encore Arena became more and more designed to reflect the style of its star competitor.</p>
+         </div>
+        </div>
+          <div class="all-lingkaran">
+            <div class="lingkaran" id="lingkaran-1" style="background-color: rgba(160, 0, 0, 0.932)" onclick="lingkaranSlide(this.id)"></div>
+            <div class="lingkaran" id="lingkaran-2" onclick="lingkaranSlide(this.id)"></div>
+            <div class="lingkaran" id="lingkaran-3" onclick="lingkaranSlide(this.id)"></div>
+            <div class="lingkaran" id="lingkaran-4" onclick="lingkaranSlide(this.id)"></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="arenas-footer">
+    
+      <div class="arenas-footer-background">   
+        <div class="arena-footer-card">
+          <h1 class="arenas-footer-header ">Arenas Map</h1>
+          <p class="arenas-footer-paragraph  smooch">Arenas features permanent bespoke maps like Party Crasher and Phase Runner, as well as weekly rotating maps. While each varies in size, they're designed to encourage frequent firefights and constant action. No hiding and hoping someone else will do your dirty work!</p>
+          <p class="arenas-footer-paragraph2  smooch">Get More Details</p>
+        </div>
+        <div class="arenas-flex">
+          <div id="phase-runner">
+            <img class="arenas-flex-content" src="../asset/map/arena/phase-runner.jpg" alt="">
+             <p class="smooch arenas-flex-content-font">Phase Runner</p>
+          </div>
+          <div id="party-crasher">
+            <img class="arenas-flex-content" src="../asset/map/arena/party-crasher.jpg" alt="">
+            <p class="smooch arenas-flex-content-font">Party Crasher</p>
+          </div>
+          <div id="weekly-rotating">
+            <img class="arenas-flex-content" src="../asset/map/arena/rotating-map.jpg" alt="">
+            <p class="smooch arenas-flex-content-font">Weekly Rotating</p>
+          </div>
+        </div>
+        <div class="kotak"><p class="kotak-font">Read The Arenas Blog</p></div>
+      </div>
+    </div>
+
+
+  <div class="footer">
+    <div class="footer-background">
+        <div class="footer-card">
+          <div class="footer-flex">
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner" id="footer-discord-icon"></div>
+            </div>
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner" id="footer-instagram-icon"></div>
+            </div>
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner" id="footer-youtube-icon"></div>
+            </div>
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner"id="footer-twitter-icon"></div>
+            </div>
+          </div>
+          <div class="footer-flex">
+            <div class="footer-logo"></div>
+          </div>  
+          <div class="footer-card-copyright">
+            ©2022 EA Games, Inc. EA Games, Apex Legend.
+          </div>
+          <div class="footer-extras footer-flex smooch">
+            <p class="footer-extras-font">Privacy Notice</p>
+            <p class="footer-extras-font">Terms Of Services</p>
+            <p class="footer-extras-font">Cookie Preferences</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

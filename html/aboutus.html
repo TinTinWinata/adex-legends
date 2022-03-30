@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/aboutus.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <script src="../script/script.js"></script>
+  <title>Adex Legends</title>
+
+  <!-- Smooch Sans Oswald Roboto  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Fjalla+One&family=Oswald:wght@300&family=Roboto:wght@300&family=Smooch+Sans&display=swap" rel="stylesheet">
+
+  <script src="../script/script.js"></script>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="navbar-bar">
+      <div class="navbar-menu">
+        <div id="home" class="navbar" onclick="home()">
+          <h2>Home</h2>
+        </div>
+        <div id="legend" class="navbar" onclick="legend()">
+          <h2>Legend</h2>
+        </div>
+        <div id="map" class="navbar" onmouseover="mapNavbar()" onmouseleave="mapCloseNavbar()">
+          <h2>Map</h2>
+          <div id="map-dropdown" class="dropdown-content">
+            <a href="arena.html" class="dropdown">Arena</a> <br>
+            <a href="battleroyale.html" class="dropdown">Battle Royale</a>
+          </div>
+        </div>
+        <div id="aboutus" class="navbar" onclick="aboutus()">
+          <h2>About</h2>
+        </div>
+      </div>
+      <div id="registration" onclick="registration()">
+        <h2>Registration</h2>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="first">
+      <video style="width: 100%" src="../asset/aboutus.mp4" class="first-background" autoplay="true"
+        loop="true"></video>
+      <div class="black-opacity"></div>
+      <div class="first-logo"></div>
+      <div class="first-banner"></div>
+      <div class="playnow-border">
+        <p class="playnow smooch">PLAY NOW</p>
+      </div>
+    </div>
+    <div class="second">
+      <div class="second-background">
+      </div>
+      <div class="card">
+        <div class="card-background"></div>
+        <div class="red"></div>
+        <div class="card-text-body">
+          <div class="card-header oswald">
+            THE LEGENDS
+          </div>
+          <div class="card-paragraph smooch">
+            Choose from a lineup of outlaws, soldiers, misfits, and misanthropes, each with their own set of skills.
+            The Apex Games welcome all comers – survive long enough, and they call you a Legend.
+          </div>
+          <div class="card-square smooch">
+            <div class="card-square-text">
+              See The Roster
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="third">
+      <div class="third-background">
+      </div>
+      <div class="black">
+      </div>
+    </div>
+    <div class="fourth">
+      <div class="fourth-background">
+        <div class="card">
+          <div class="card-text-body">
+            <div class="card-header oswald">
+              BEYOND BATTLE ROYALE
+            </div>
+            <div class="card-paragraph smooch">
+              Adex Legends is always evolving. Play in classic 60-person Battle Royale matches, 3v3 Arenas battles, and limited-time modes and takeovers!
+            </div>
+            <div class="card-square smooch">
+              <div class="card-square-text">
+                See The Roster
+              </div>
+            </div>
+          </div>
+          <div class="red"></div>
+          <div class="card-background-2"></div>
+         
+        </div>
+        <div class="block"></div>
+        <div class="three-picture">
+          <div class="picture" id="pitcure-1">
+            <div class="picture-strategy" id="picture-strategy-1"></div>
+            <div class="picture-strategy-text">
+              <div class="picture-strategy-header text-center oswald">
+                Strategic Squad Play
+              </div>
+              <div class="picture-strategy-paragraph roboto">
+                Whether you're battling on a massive floating city in Battle Royale or dueling in close-quarters Arenas, you'll need to think fast. Master your Legend's unique abilities and coordinate with your teammates to discover new tactics and powerful combination.
+              </div>
+            </div>
+          </div>
+          <div class="picture" id="pitcure-2">
+            <div class="picture-strategy" id="picture-strategy-2"></div>
+            <div class="picture-strategy-text">
+              <div class="picture-strategy-header text-center oswald">
+                Innovative Combat
+              </div>
+              <div class="picture-strategy-paragraph roboto">
+               Master an expanding assortment of powerful weapon and equipment. You'll need to move fast and learn the rhythms of each weapon to get the most of your arsenal. Plus change it up in limited-time modes, and get ready for a boatload of new content each season.
+              </div>
+            </div>
+          </div>
+          <div class="picture" id="picture-3">
+            <div class="picture-strategy" id="picture-strategy-3"></div>
+            <div class="picture-strategy-text">
+              <div class="picture-strategy-header text-center oswald">
+                Ever-expanding Universe
+              </div>
+              <div class="picture-strategy-paragraph roboto">
+                Apex Legends takes place an in immersive universe where the story continues to evolve, maps change each season, and new Legends keep joining the fight. Make your mark on the Apex Games with a multitude of distinctive outfits and join the adventure!
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="last">
+        <div class="last-background">
+          <div class="last-card">
+            <div class="last-svg"></div>
+            <div class="last-header oswald">A WORLD WHERE ANYTHING GOES</div>
+            <div class="last-paragraph smooch">The Frontier War is over. After decades of conflict between the IMC and the militia founded to fight them, the region of space known as the Frontier can finally see peace.<br><br>
+
+              But liberation can come at a cost: the Frontier worlds were left barren by the war, and promised aid dwindled to nothing. With no way to support themselves, those who remained had no choice but to leave their homes. The brave relocated to the Outlands.<br><br>
+              
+              A remote cluster of planets on the fringes of the Frontier, the Outlands are untouched by war and teeming with resources and opportunity. But life is cheap here, and danger lurks around every corner. Its pioneers, explorers, and outlaws used to spend their lives locked in an endless power struggle – now, they settle their differences in the Apex Games, a bloodsport where Legends from all corners of the Frontier compete for money, fame, and glory.<br>
+              
+              </div>
+          </div> 
+          <div class="black-80"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-background">
+        <div class="footer-card">
+          <div class="footer-flex">
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner" id="footer-discord-icon"></div>
+            </div>
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner" id="footer-instagram-icon"></div>
+            </div>
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner" id="footer-youtube-icon"></div>
+            </div>
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner"id="footer-twitter-icon"></div>
+            </div>
+          </div>
+          <div class="footer-flex">
+            <div class="footer-logo"></div>
+          </div>  
+          <div class="footer-card-copyright">
+            ©2022 EA Games, Inc. EA Games, Apex Legend.
+          </div>
+          <div class="footer-extras footer-flex smooch">
+            <p class="footer-extras-font">Privacy Notice</p>
+            <p class="footer-extras-font">Terms Of Services</p>
+            <p class="footer-extras-font">Cookie Preferences</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+.map-corousel {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.map-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+}
+
+.caption {
+  font-family: "Oswald", sans-serif;
+  left: 5%;
+  top: 70%;
+  font-size: 100px;
+  position: absolute;
+  color: white;
+}
+
+#caption-4 {
+  font-family: "Oswald", sans-serif;
+  left: 15%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  position: absolute;
+  color: white;
+}
+
+#slide-1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../asset/map/battle-royale/kings-kanyon.jpg);
+  background-size: cover;
+  position: absolute;
+  display: block;
+}
+#slide-2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../asset/map/battle-royale/olympus.jpg);
+  background-size: cover;
+  position: absolute;
+  display: none;
+}
+
+#slide-3 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../asset/map/battle-royale/storm-point.jpg);
+  background-size: cover;
+  position: absolute;
+  display: none;
+}
+#slide-4 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../asset/map/battle-royale/world-edge.jpg);
+  background-size: cover;
+  position: absolute;
+  display: none;
+}
+
+.slide-content {
+  transition: all 3s ease;
+}
+
+.black {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-color: black;
+  position: absolute;
+}
+
+.plus {
+  font-size: 60px;
+  color: white;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  right: 4%;
+  top: 50%;
+  /* background-color: red; */
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+}
+.plus:hover {
+  font-size: 65px;
+  /* box-shadow: 30px 10px 50px rgb(204, 204, 204); */
+}
+
+.minus {
+  font-size: 60px;
+  color: white;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  left: 4%;
+  top: 50%;
+  /* background-color: red; */
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+}
+.minus:hover {
+  font-size: 65px;
+  /* box-shadow: 30px 10px 50px rgb(204, 204, 204); */
+}
+
+.arena-title {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+.black-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(22, 22, 22);
+}
+.center {
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.arena-header {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.arena-card {
+  text-align: center;
+  padding-top: 30px;
+}
+.arena-text {
+  color: white;
+  font-weight: 100;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.smooch {
+  font-family: "Smooch Sans", sans-serif;
+}
+.flex {
+  display: flex;
+  /* border: 1px solid red; */
+}
+.space-evenly {
+  justify-content: space-evenly;
+}
+.arena-flex {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+  text-decoration: underline;
+}
+.arena-a {
+  text-decoration: underline;
+  color: white;
+  margin-left: 30px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.arena-a:hover {
+  color: red;
+}
+.encore {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-color: black;
+}
+.encore-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  background-image: url(../asset/map/arena/encore.jpg);
+  background-size: cover;
+  filter: saturate(0%) opacity(20%);
+}
+
+.discover {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.discover-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../asset/background5.jpg");
+  background-size: cover;
+}
+#discover-title {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  font-size: 60px;
+  top: 30%;
+}
+
+#discover-paragraph {
+  width: 1000px;
+  color: black;
+  top: 45%;
+  font-size: 35px;
+}
+.map {
+  /* border: 1px solid red; */
+  top: 10%;
+  left: 10%;
+}
+
+.encore-paragraph {
+  /* margin: 30px; */
+  text-align: center;
+  width: 600px;
+  padding-top: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.encore-title {
+  /* border: 1px solid red; */
+  text-align: center;
+  width: 600px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 1000;
+  font-size: 70px;
+  color: white;
+}
+
+.all-lingkaran {
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  /* border: 1px solid red; */
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 95%;
+  display: flex;
+}
+
+.lingkaran {
+  margin: 0 auto;
+  width: 15px;
+  height: 15px;
+  /* background-color: rgba(160, 0, 0, 0.932); */
+  background-color: rgba(61, 0, 0, 0.932);
+  /* margin-left: 20px; */
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.arenas-footer {
+  position: relative;
+  width: 100%;
+  height: 920px;
+}
+.arenas-footer-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../asset/background5.jpg);
+}
+.arena-footer-card {
+  padding-top: 50px;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+.arenas-footer-header {
+  /* border: 1px solid red; */
+  font-family: "Oswald", sans-serif;
+  color: rgb(31, 31, 31);
+  font-size: 60px;
+  font-weight: 1000;
+  padding-top: 10px;
+}
+.arenas-footer-paragraph {
+  color: rgb(31, 31, 31);
+  font-size: 40px;
+  font-weight: 100;
+  padding-top: 40px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.arenas-footer-paragraph2 {
+  color: rgb(168, 0, 0);
+  font-size: 30px;
+  font-weight: 800;
+  padding-top: 30px;
+  cursor: pointer;
+}
+.arenas-footer-paragraph2:hover {
+  text-decoration: underline;
+}
+
+.arenas-flex {
+  padding-top: 70px;
+
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+.arenas-flex-content {
+  width: 500px;
+  height: 250px;
+  margin-left: 30px;
+}
+.arenas-flex-content-font {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 1000;
+}
+
+.kotak {
+  background-color: rgb(202, 5, 5);
+  height: 60px;
+  width: 160px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.kotak:hover {
+  width: 170px;
+  height: 65px;
+}
+/* .kotak-font:hover {
+  padding-top: 10%;
+} */
+.kotak-font {
+  font-size: 17px;
+  transition: all 0.3s ease;
+  font-family: "Oswald", sans-serif;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  padding-top: 11%;
+  /* padding-top: 10px; */
+  /* vertical-align: middle; */
+  /* margin: auto; */
+}

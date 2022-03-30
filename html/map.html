@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/legend.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/font.css">
+
+  <script src="../script/script.js"></script>
+  <title>Adex Legends</title>
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  
+  <!-- Oswald Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <script src="../script/script.js"></script>
+</head>
+<body> 
+  <div class="nav">
+    <div class="navbar-bar">
+      <div class="navbar-menu">
+       <div id="home" class="navbar" onclick="home()">
+         <h2>Home</h2>
+       </div>
+       <div id="legend" class="navbar" onclick="legend()">
+         <h2>Legend</h2>
+       </div>
+       <div id="map" class="navbar"  onmouseover="mapNavbar()" onmouseleave="mapCloseNavbar()">
+         <h2>Map</h2>
+        <div id="map-dropdown" class="dropdown-content">
+          <a href="arena.html" class="dropdown">Arena</a> <br>
+          <a href="battleroyale.html" class="dropdown">Battle Royale</a>
+        </div>
+       </div>
+       <div id="aboutus" class="navbar"  onclick="aboutus()">
+         <h2>About</h2>
+       </div>
+      </div>
+      <div id="registration" onclick="registration()">
+        <h2>Registration</h2>
+        </div>
+     </div>
+  </div>
+
+   <div class="content">
+       <div class="title">
+         <div id="title_background">
+
+         </div>
+       </div>
+       <div class="legend">
+        <div id="legend_background">
+          <div class="two-flex">
+
+            <div class="flex-card">
+              <div class="card" id="card-ash" onclick="ash()"></div>
+              <div class="card" id="card-bangalore" onclick="bangalore()"></div>
+              <div class="card" id="card-bloodhound" onclick="bloodhound()"></div>
+              <div class="card" id="card-caustic" onclick="caustic()"></div>
+              <div class="card" id="card-crypto" onclick="crypto()"></div>
+              <div class="card" id="card-fush" onclick="fuze()"></div>
+              <div class="card" id="card-gilblatar" onclick="gilblatar()"></div>
+              <div class="card" id="card-horizon" onclick="horizon()"></div>
+             </div>
+            <div id="character"></div>
+        </div>
+      </div>
+      </div>
+   </div>
+   <div class="footer">
+    <div class="footer-background">
+        <div class="footer-card">
+          <div class="footer-flex">
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner" id="footer-discord-icon"></div>
+            </div>
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner" id="footer-instagram-icon"></div>
+            </div>
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner" id="footer-youtube-icon"></div>
+            </div>
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner"id="footer-twitter-icon"></div>
+            </div>
+          </div>
+          <div class="footer-flex">
+            <div class="footer-logo"></div>
+          </div>  
+          <div class="footer-card-copyright">
+            ©2022 EA Games, Inc. EA Games, Apex Legend.
+          </div>
+          <div class="footer-extras footer-flex smooch">
+            <p class="footer-extras-font">Privacy Notice</p>
+            <p class="footer-extras-font">Terms Of Services</p>
+            <p class="footer-extras-font">Cookie Preferences</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

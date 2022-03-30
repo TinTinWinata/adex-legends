@@ -1,0 +1,129 @@
+.content {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+}
+.content-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../asset/wallpaper.jpg);
+  background-size: cover;
+  filter: blur(7px);
+}
+
+.card {
+  top: 10%;
+  right: 3%;
+  position: relative;
+  width: 500px;
+  height: 600px;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  /* transform: translate(-50%, -50%); */
+  /* left: 50%; */
+  /* top: 50%; */
+  /* opacity: 0.9; */
+  /* border: 2px solid white; */
+  border-radius: 20px;
+}
+img.lifeline {
+  /* width: 25%;
+  height: 85%;
+  margin-top: 40px; */
+  /* width: 100px; */
+  /* height: 100px; */
+}
+.card-flex {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-left: 150px;
+  /* right: -3%; */
+  /* border: 10px solid red; */
+  display: flex;
+  justify-content: center;
+}
+.register-font {
+  /* border: 1px solid red; */
+
+  font-size: 35px;
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  top: 8%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.form-input {
+  border-radius: 10px;
+  width: 90%;
+  height: 50px;
+}
+.form {
+  margin-top: 100px;
+  margin-left: 30px;
+}
+.flex {
+  display: flex;
+}
+.form-label {
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+}
+.form-checkbox-label {
+  margin-left: 6px;
+  color: white;
+  font-style: italic;
+}
+input {
+  /* font-size: 15px; */
+  padding-left: 10px;
+  margin-top: 10px;
+}
+input.form-checkbox {
+  padding-left: 0px;
+  margin-top: 3px;
+  margin-left: 15px;
+}
+.ml {
+  margin-top: 10px;
+  margin-left: -120px;
+}
+.register-button-card {
+  position: absolute;
+  top: 85%;
+  right: 10%;
+  width: 405px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgba(230, 2, 2, 0.746);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.black {
+  /* position: absolute; */
+}
+.register-button-card:hover {
+  background-color: rgba(182, 0, 0, 0.746);
+}
+.form-label-dob {
+  margin-top: 30px;
+}
+.register-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 1000;
+  font-size: 20px;
+}
+#error {
+  display: none;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: rgb(207, 2, 2);
+}

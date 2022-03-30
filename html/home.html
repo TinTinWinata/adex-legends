@@ -1,0 +1,180 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/home.css">
+   <link rel="stylesheet" href="../css/navbar.css">
+   <link rel="stylesheet" href="../css/footer.css">
+   <link rel="stylesheet" href="../css/font.css">
+   <script src="../script/script.js"></script>
+   <title>Adex Legends</title>
+  <link rel="icon" href="../asset/logo.png" type="image/x-icon">
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  
+  <!-- Oswald Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+  <!-- Megrim -->
+  <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+
+ </head>
+ <body> 
+   
+  <div class="nav">
+    <div class="navbar-bar">
+      <div class="navbar-menu">
+       <div id="home" class="navbar" onclick="home()">
+         <h2>Home</h2>
+       </div>
+       <div id="legend" class="navbar" onclick="legend()">
+         <h2>Legend</h2>
+       </div>
+       <div id="map" class="navbar"  onmouseover="mapNavbar()" onmouseleave="mapCloseNavbar()">
+         <h2>Map</h2>
+        <div id="map-dropdown" class="dropdown-content">
+          <a href="arena.html" class="dropdown">Arena</a> <br>
+          <a href="battleroyale.html" class="dropdown">Battle Royale</a>
+        </div>
+       </div>
+       <div id="aboutus" class="navbar"  onclick="aboutus()">
+         <h2>About</h2>
+       </div>
+      </div>
+      <div id="registration" onclick="registration()">
+        <h2>Registration</h2>
+        </div>
+     </div>
+  </div>
+    <div class="content">
+        <section class="first">
+          <div id="first_background">
+            <!-- <div class="black"></div> -->
+            <div class="playnow-border">
+              <div id="playnow" onclick="playNow()">
+                <h1 id="playnow-text">PLAY NOW</h1>
+              </div>
+            </div>
+          </section>
+        </section>
+          <section class="video-section">
+              <div id="video-background">
+                <iframe id="video" class="center" src="https://www.youtube.com/embed/mUNYh_L250M?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </section>
+          <section class="second">
+            <div id="second_background"> 
+              <h1 class="center oswald" id="latestnews-title">Latest News</h1>
+              <div class="flex" id="flex-mobile">
+                <div class="card">
+                  <div class="news" id="news-1">
+                    <div id="news-image-1"></div>
+                    <h3 class="news-text news-title"><span class="red ">APEX LEGENDS</span><span class="white"> MAR 1, 2022</span></h3>
+                    <h1 class="white news-text">Apex Legends 3rd Anniversary Weekly Community Features!</h1>
+                    <p class="white news-text" id="news-paragraph">We’re doing weekly spotlights on creators and community groups who have helped drive Apex Legends forward. Updated weekly this Season!</p>
+                  </div>
+                  <div class="bottom-red"></div>
+                </div>
+                <div class="card">
+
+                  <div class="news" id="news-2">
+                    <div id="news-image-2"></div>
+                    <h3 class="news-text news-title"><span class="red ">APEX LEGENDS</span><span class="white"> FEB 23, 2022</span></h3>
+                    <h1 class="white news-text">Apex Legends Mobile Limited Regional Launch FAQ</h1>
+                    <p class="white news-text" id="news-paragraph">Learn everything you will need to know before the start of the Limited Regional Launch</p>
+                  </div>
+                  <div class="bottom-red"></div>
+                </div>
+
+                <div class="card">
+
+                  <div class="news" id="news-3">
+                    <div id="news-image-3"></div>
+                    <h3 class="news-text news-title"><span class="red ">APEX LEGENDS</span><span class="white"> FEB 17, 2022</span></h3>
+                    <h1 class="white news-text">Stay Frosty With This Legendary Prime Gaming Bloodhound Skin</h1>
+                    <p class="white news-text" id="news-paragraph">Get the Legendary Bloodhound Frosthaven skin with your Prime membership from February 17th –  March 17th</p>
+                  </div>
+                  <div class="bottom-red"></div>
+                </div>
+              </div>
+              </div>
+        </section>
+          <section class="madmaggie-section">
+            <div id="madmaggie-background">
+            <div class="black"></div>
+              <div class="madmaggie-flex">
+
+                <img class="madmaggie-image" src="../asset/watson.png" alt="">
+                <div class="madmaggie-wow">
+                  <div class="madmaggie-card">
+                    <div class="madmaggie-card-content">
+                      <div class="madmaggie-card-image achievement">
+                      </div>
+                      <h2 class="madmaggie-card-text oswald">Legendary Characters</h2>
+                      <p class="madmaggie-card-paragraph oswald">Explore a growing roster of powerful Legends, each with their own unique personality, strengths, and abilities.</p>
+                    </div>
+                    <div class="madmaggie-card-content">
+                      <div class="madmaggie-card-image death">
+                      </div>
+                      <h2 class="madmaggie-card-text oswald">Strategic Combat</h2>
+                      <p class="madmaggie-card-paragraph oswald">Choose your Legend, team up, and combine your unique skills to be the last squad standing.</p>
+                  
+                    </div>
+                    <div class="madmaggie-card-content">
+                      <div class="madmaggie-card-image wingman">
+                      </div>
+                      <h2 class="madmaggie-card-text oswald">The Ultimate Squad</h2>
+                      <p class="madmaggie-card-paragraph oswald">Master an expanding assortment of powerful weapons, unique abilities, and game-changing equipment</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        <div class="footer">
+          <div class="footer-background">
+              <div class="footer-card">
+                <div class="footer-flex">
+                  <div class="footer-icon-outer">
+                    <div class="footer-icon-inner" id="footer-discord-icon"></div>
+                  </div>
+                  <div class="footer-icon-outer">
+                    <div class="footer-icon-inner" id="footer-instagram-icon"></div>
+                  </div>
+                  <div class="footer-icon-outer">
+                    <div class="footer-icon-inner" id="footer-youtube-icon"></div>
+                  </div>
+                  <div class="footer-icon-outer">
+                    <div class="footer-icon-inner"id="footer-twitter-icon"></div>
+                  </div>
+                </div>
+                <div class="footer-flex">
+                  <div class="footer-logo"></div>
+                </div>  
+                <div class="footer-card-copyright">
+                  ©2022 EA Games, Inc. EA Games, Apex Legend.
+                </div>
+                <div class="footer-extras footer-flex smooch">
+                  <p class="footer-extras-font">Privacy Notice</p>
+                  <p class="footer-extras-font">Terms Of Services</p>
+                  <p class="footer-extras-font">Cookie Preferences</p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+    </div>
+ </body>
+ </html>                                                           

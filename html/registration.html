@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/registration.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <title>Adex Legends</title>
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  
+  <!-- Oswald Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  
+  <script src="../script/script.js"></script>
+  <script src="../script/register.js"></script>
+
+</head>
+<body> 
+  <div class="nav">
+    <div class="navbar-bar">
+      <div class="navbar-menu">
+       <div id="home" class="navbar" onclick="home()">
+         <h2>Home</h2>
+       </div>
+       <div id="legend" class="navbar" onclick="legend()">
+         <h2>Legend</h2>
+       </div>
+       <div id="map" class="navbar"  onmouseover="mapNavbar()" onmouseleave="mapCloseNavbar()">
+         <h2>Map</h2>
+        <div id="map-dropdown" class="dropdown-content">
+          <a href="arena.html" class="dropdown">Arena</a> <br>
+          <a href="battleroyale.html" class="dropdown">Battle Royale</a>
+        </div>
+       </div>
+       <div id="aboutus" class="navbar"  onclick="aboutus()">
+         <h2>About</h2>
+       </div>
+      </div>
+      <div id="registration" onclick="registration()">
+        <h2>Registration</h2>
+        </div>
+     </div>
+  </div>
+
+   <div class="content">
+        <div class="content-background"></div>
+        <div class="black"></div>
+        <div class="card-flex">
+          <div class="card">
+            <h1 class="register-font smooch">Create An Account</h1>
+            <div class="form">
+              <input class="form-input raleway" type="text" id="username" placeholder="Username">
+              <input class="form-input raleway" type="password" id="password" placeholder="Password">
+              <input class="form-input raleway" type="text" id="email" placeholder="Email">
+              <h1 class="form-label fjalla-one form-label-dob">Date Of Birth</h1>
+              <input class="form-input raleway" type="date" id="dob" placeholder="mm/dd/yyyy">
+              <div class="flex ml">
+                <input class="form-checkbox smooch" type="checkbox"  id="checkbox" placeholder="mm/dd/yyyy">
+                <p class="form-checkbox-label raleway">Agree to terms and conditions.</p>
+                
+              </div>
+              <div id="error">This is an error!</div>
+              <div class="register-button-card" onclick="register()">
+                <div class="register-center">
+                  <p class="oswald">Register</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="lifeline" src="../asset/registration-image.png" alt="lifeline-character">
+
+          </div>
+        </div>
+        
+        
+  </div>
+  <div class="footer">
+    <div class="footer-background">
+        <div class="footer-card">
+          <div class="footer-flex">
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner" id="footer-discord-icon"></div>
+            </div>
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner" id="footer-instagram-icon"></div>
+            </div>
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner" id="footer-youtube-icon"></div>
+            </div>
+            <div class="footer-icon-outer">
+              <div class="footer-icon-inner"id="footer-twitter-icon"></div>
+            </div>
+          </div>
+          <div class="footer-flex">
+            <div class="footer-logo"></div>
+          </div>  
+          <div class="footer-card-copyright">
+            ©2022 EA Games, Inc. EA Games, Apex Legend.
+          </div>
+          <div class="footer-extras footer-flex smooch">
+            <p class="footer-extras-font">Privacy Notice</p>
+            <p class="footer-extras-font">Terms Of Services</p>
+            <p class="footer-extras-font">Cookie Preferences</p>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
