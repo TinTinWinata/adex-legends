@@ -1,6 +1,7 @@
 .legend {
   width: 100%;
   height: 1200px;
+  overflow: hidden;
   /* background-color: blue; */
 }
 
@@ -15,7 +16,6 @@
   transition: all 0.3s ease-in-out;
   width: 800px;
   height: 1000px;
-  border: 1px solid red;
   background-image: url(../asset/character/bangalore.jpg);
   background-size: cover;
 }
